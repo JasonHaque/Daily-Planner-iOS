@@ -65,22 +65,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ry-iQ-bt1">
-                                <rect key="frame" x="167" y="66" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="57F-mv-5R9">
+                                <rect key="frame" x="40" y="84" width="334" height="206.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roE-uH-MDo">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDc-Qc-zlP">
+                                        <rect key="frame" x="0.0" y="58.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUj-O4-ugQ">
+                                        <rect key="frame" x="0.0" y="112.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJi-bT-gkZ">
+                                        <rect key="frame" x="0.0" y="166.5" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FCZ-hM-7fV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Log in"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rDc-Qc-zlP" firstAttribute="height" secondItem="oJi-bT-gkZ" secondAttribute="height" multiplier="0.85" id="a7M-bt-NdO"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="57F-mv-5R9" firstAttribute="leading" secondItem="9ze-Go-PL9" secondAttribute="leading" constant="40" id="FYQ-gS-3PE"/>
+                            <constraint firstItem="9ze-Go-PL9" firstAttribute="trailing" secondItem="57F-mv-5R9" secondAttribute="trailing" constant="40" id="XYQ-Za-F19"/>
+                            <constraint firstItem="57F-mv-5R9" firstAttribute="top" secondItem="9ze-Go-PL9" secondAttribute="top" constant="40" id="jj4-An-sE5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9ze-Go-PL9"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Ux-0x-eWM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndr-UX-B1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1993" y="-109"/>
+            <point key="canvasLocation" x="1992.753623188406" y="-109.15178571428571"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ite-fp-h7K">
