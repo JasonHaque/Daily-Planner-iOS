@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class LoginViewController: UIViewController {
 
