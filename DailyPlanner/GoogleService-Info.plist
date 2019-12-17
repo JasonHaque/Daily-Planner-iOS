@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>703464466146-s1d81munl1uk4hvpq55l0f1uf9slvna2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.703464466146-s1d81munl1uk4hvpq55l0f1uf9slvna2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCDwdCCqQfWEfPilpVOMGLhPIQXKIxwtjc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>703464466146</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hello.DailyPlanner</string>
+	<key>PROJECT_ID</key>
+	<string>dailyplannerios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dailyplannerios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:703464466146:ios:180c21c2ab3ffbb83620bb</string>
+	<key>DATABASE_URL</key>
+	<string>https://dailyplannerios.firebaseio.com</string>
+</dict>
+</plist>

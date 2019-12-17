@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032AFDE3C51A5DD5E908D138 /* Pods_DailyPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C978278307DBF64A3B97C46 /* Pods_DailyPlanner.framework */; };
 		9635918423A909AE0088D0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918323A909AE0088D0D2 /* AppDelegate.swift */; };
 		9635918623A909AE0088D0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918523A909AE0088D0D2 /* SceneDelegate.swift */; };
 		9635918823A909AE0088D0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918723A909AE0088D0D2 /* ViewController.swift */; };
 		9635918B23A909AE0088D0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9635918923A909AE0088D0D2 /* Main.storyboard */; };
 		9635918D23A909B30088D0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9635918C23A909B30088D0D2 /* Assets.xcassets */; };
 		9635919023A909B30088D0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9635918E23A909B30088D0D2 /* LaunchScreen.storyboard */; };
+		9635919823A90D830088D0D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9635919723A90D830088D0D2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FDF60781FE134CD44BF16CB /* Pods-DailyPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPlanner.release.xcconfig"; path = "Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		2C978278307DBF64A3B97C46 /* Pods_DailyPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F8F1492D627E533C825355 /* Pods-DailyPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPlanner.debug.xcconfig"; path = "Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		9635918023A909AE0088D0D2 /* DailyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9635918323A909AE0088D0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9635918523A909AE0088D0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		9635918C23A909B30088D0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9635918F23A909B30088D0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9635919123A909B30088D0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9635919723A90D830088D0D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032AFDE3C51A5DD5E908D138 /* Pods_DailyPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B1DCCB1D8CDC6EFCCECDE19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95F8F1492D627E533C825355 /* Pods-DailyPlanner.debug.xcconfig */,
+				0FDF60781FE134CD44BF16CB /* Pods-DailyPlanner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9635917723A909AE0088D0D2 = {
 			isa = PBXGroup;
 			children = (
 				9635918223A909AE0088D0D2 /* DailyPlanner */,
 				9635918123A909AE0088D0D2 /* Products */,
+				3B1DCCB1D8CDC6EFCCECDE19 /* Pods */,
+				BF239CF6812348A37201426E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +82,17 @@
 				9635918C23A909B30088D0D2 /* Assets.xcassets */,
 				9635918E23A909B30088D0D2 /* LaunchScreen.storyboard */,
 				9635919123A909B30088D0D2 /* Info.plist */,
+				9635919723A90D830088D0D2 /* GoogleService-Info.plist */,
 			);
 			path = DailyPlanner;
+			sourceTree = "<group>";
+		};
+		BF239CF6812348A37201426E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C978278307DBF64A3B97C46 /* Pods_DailyPlanner.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9635919423A909B30088D0D2 /* Build configuration list for PBXNativeTarget "DailyPlanner" */;
 			buildPhases = (
+				89B968F71C05BF4C8E9843C2 /* [CP] Check Pods Manifest.lock */,
 				9635917C23A909AE0088D0D2 /* Sources */,
 				9635917D23A909AE0088D0D2 /* Frameworks */,
 				9635917E23A909AE0088D0D2 /* Resources */,
+				46E3421F848FBCF2BF1ACBD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9635919023A909B30088D0D2 /* LaunchScreen.storyboard in Resources */,
+				9635919823A90D830088D0D2 /* GoogleService-Info.plist in Resources */,
 				9635918D23A909B30088D0D2 /* Assets.xcassets in Resources */,
 				9635918B23A909AE0088D0D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46E3421F848FBCF2BF1ACBD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89B968F71C05BF4C8E9843C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9635917C23A909AE0088D0D2 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		9635919523A909B30088D0D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F8F1492D627E533C825355 /* Pods-DailyPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +373,7 @@
 		};
 		9635919623A909B30088D0D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FDF60781FE134CD44BF16CB /* Pods-DailyPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
