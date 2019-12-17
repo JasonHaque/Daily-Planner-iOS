@@ -182,6 +182,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="SignUpTapped:" destination="w1M-Xm-o9F" eventType="touchUpInside" id="eDy-4T-GUm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -198,6 +201,11 @@
                         <viewLayoutGuide key="safeArea" id="pzv-z3-cgi"/>
                     </view>
                     <navigationItem key="navigationItem" id="HAw-kz-BZo"/>
+                    <connections>
+                        <outlet property="ConfirmPass" destination="y1G-kd-hqS" id="1KM-ZF-l4y"/>
+                        <outlet property="SignUpMail" destination="iVr-xa-Rxr" id="ZPE-10-1tE"/>
+                        <outlet property="SignUpPassword" destination="Iyh-ER-GFx" id="igS-VH-yT1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4iD-XS-0b4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
