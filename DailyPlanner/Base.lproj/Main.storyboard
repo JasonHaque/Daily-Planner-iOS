@@ -91,6 +91,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <action selector="LoginTapped:" destination="hTp-XJ-2Na" eventType="touchUpInside" id="E46-Ux-DQB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -107,6 +110,10 @@
                         <viewLayoutGuide key="safeArea" id="9ze-Go-PL9"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Ux-0x-eWM"/>
+                    <connections>
+                        <outlet property="LoginMail" destination="rDc-Qc-zlP" id="wQl-gz-pjH"/>
+                        <outlet property="LoginPassword" destination="fUj-O4-ugQ" id="5Hs-Lw-NXX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndr-UX-B1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
