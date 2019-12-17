@@ -24,6 +24,17 @@ class LoginViewController: UIViewController {
 
     
     @IBAction func LoginTapped(_ sender: Any) {
+        let error = validateInputs()
+        if(error){
+            //error code
+        }
+    }
+    func validateInputs()-> Bool{
+        if(LoginMail.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
+            LoginPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines)==""){
+            return true
+        }
+        return false
     }
     
 }
