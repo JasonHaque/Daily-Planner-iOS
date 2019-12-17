@@ -17,6 +17,7 @@
 		9635919823A90D830088D0D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9635919723A90D830088D0D2 /* GoogleService-Info.plist */; };
 		9635919B23A911B60088D0D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635919A23A911B60088D0D2 /* LoginViewController.swift */; };
 		9635919D23A911C60088D0D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635919C23A911C60088D0D2 /* SignUpViewController.swift */; };
+		9635919F23A917F20088D0D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635919E23A917F20088D0D2 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9635919723A90D830088D0D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9635919A23A911B60088D0D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9635919C23A911C60088D0D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9635919E23A917F20088D0D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				9635918723A909AE0088D0D2 /* ViewController.swift */,
 				9635919A23A911B60088D0D2 /* LoginViewController.swift */,
 				9635919C23A911C60088D0D2 /* SignUpViewController.swift */,
+				9635919E23A917F20088D0D2 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				9635918423A909AE0088D0D2 /* AppDelegate.swift in Sources */,
 				9635918623A909AE0088D0D2 /* SceneDelegate.swift in Sources */,
 				9635919D23A911C60088D0D2 /* SignUpViewController.swift in Sources */,
+				9635919F23A917F20088D0D2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
