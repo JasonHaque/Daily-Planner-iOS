@@ -25,6 +25,20 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func SignUpTapped(_ sender: Any) {
+        let error = validateInputs()
+        
+        if(error){
+            //add error code
+        }
     }
     
+    func validateInputs()-> Bool{
+        if(SignUpMail.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
+            SignUpPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
+            ConfirmPass.text?.trimmingCharacters(in: .whitespacesAndNewlines)==""){
+            return true
+        }
+        return false
+    }
+   
 }
