@@ -15,18 +15,23 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var LoginMail: UITextField!
     
     @IBOutlet weak var LoginPassword: UITextField!
+    
+    @IBOutlet weak var LoginError: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadViews()
+        
     }
     
-
+    func loadViews(){
+        LoginError.alpha=0
+    }
     
     @IBAction func LoginTapped(_ sender: Any) {
         let error = validateInputs()
         if(error){
-            //error code
+            LoginError.alpha=1
         }
     }
     func validateInputs()-> Bool{

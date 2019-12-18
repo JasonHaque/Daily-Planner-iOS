@@ -17,18 +17,21 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var ConfirmPass: UITextField!
     
+    @IBOutlet weak var SIgnUpError: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadViews()
     }
     
-
+    
+    func loadViews(){
+        SIgnUpError.alpha=0
+    }
     @IBAction func SignUpTapped(_ sender: Any) {
         let error = validateInputs()
         
         if(error){
-            //add error code
+            SIgnUpError.alpha=1
         }
     }
     

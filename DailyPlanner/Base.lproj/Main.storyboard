@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3sE-yC-KHG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3sE-yC-KHG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="57F-mv-5R9">
-                                <rect key="frame" x="40" y="84" width="334" height="206.5"/>
+                                <rect key="frame" x="40" y="84" width="334" height="247"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roE-uH-MDo">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="38.5"/>
@@ -95,6 +95,12 @@
                                             <action selector="LoginTapped:" destination="hTp-XJ-2Na" eventType="touchUpInside" id="E46-Ux-DQB"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZF-Ib-SkW">
+                                        <rect key="frame" x="0.0" y="226.5" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="rDc-Qc-zlP" firstAttribute="height" secondItem="oJi-bT-gkZ" secondAttribute="height" multiplier="0.85" id="a7M-bt-NdO"/>
@@ -111,6 +117,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0Ux-0x-eWM"/>
                     <connections>
+                        <outlet property="LoginError" destination="VZF-Ib-SkW" id="q0q-Wo-cCy"/>
                         <outlet property="LoginMail" destination="rDc-Qc-zlP" id="wQl-gz-pjH"/>
                         <outlet property="LoginPassword" destination="fUj-O4-ugQ" id="5Hs-Lw-NXX"/>
                     </connections>
@@ -152,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yxK-9f-1dw">
-                                <rect key="frame" x="40" y="84" width="334" height="260.5"/>
+                                <rect key="frame" x="40" y="84" width="334" height="301"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG4-L2-QKk">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="38.5"/>
@@ -186,6 +193,12 @@
                                             <action selector="SignUpTapped:" destination="w1M-Xm-o9F" eventType="touchUpInside" id="eDy-4T-GUm"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-81-uB5">
+                                        <rect key="frame" x="0.0" y="280.5" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="nG4-L2-QKk" firstAttribute="height" secondItem="1Dg-tS-Wp7" secondAttribute="height" multiplier="0.9625" id="4cZ-ah-NRt"/>
@@ -203,6 +216,7 @@
                     <navigationItem key="navigationItem" id="HAw-kz-BZo"/>
                     <connections>
                         <outlet property="ConfirmPass" destination="y1G-kd-hqS" id="1KM-ZF-l4y"/>
+                        <outlet property="SIgnUpError" destination="ciO-81-uB5" id="baC-tk-z9O"/>
                         <outlet property="SignUpMail" destination="iVr-xa-Rxr" id="ZPE-10-1tE"/>
                         <outlet property="SignUpPassword" destination="Iyh-ER-GFx" id="igS-VH-yT1"/>
                     </connections>
