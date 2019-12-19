@@ -31,7 +31,17 @@ class SignUpViewController: UIViewController {
         let error = validateInputs()
         
         if(error != nil){
-            showError(message: error!)
+            showError (error!)
+        }
+        else{
+            loadViews()
+            let email = SignUpMail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let pass = SignUpPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            Auth.auth().createUser(withEmail: email, password: pass) { (result, error) in
+                if(error != nil){
+                    self.showError("Could not create user")
+                }
+            }
         }
     }
     
@@ -46,7 +56,7 @@ class SignUpViewController: UIViewController {
         }
         return nil
     }
-    func showError(message : String){
+    func showError(_ message : String){
         SIgnUpError.text=message
         SIgnUpError.alpha=1
     }
