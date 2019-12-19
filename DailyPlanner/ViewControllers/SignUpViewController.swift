@@ -41,6 +41,9 @@ class SignUpViewController: UIViewController {
             ConfirmPass.text?.trimmingCharacters(in: .whitespacesAndNewlines)==""){
             return "Fill in the fields properly to sign up"
         }
+        else if(SignUpPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) != ConfirmPass.text?.trimmingCharacters(in: .whitespacesAndNewlines)){
+            return "Passwords do  not match"
+        }
         return nil
     }
     func showError(message : String){
