@@ -33,6 +33,16 @@ class LoginViewController: UIViewController {
         if(error != nil){
             showError(message: error!)
         }
+        else{
+            loadViews()
+            let email = LoginMail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let pass = LoginPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            Auth.auth().signIn(withEmail: email, password: pass) { (result, error) in
+                if(error != nil){
+                    self.showError(message: "Could not log in")
+                }
+            }
+        }
     }
     func validateInputs()-> String?{
         if(LoginMail.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
