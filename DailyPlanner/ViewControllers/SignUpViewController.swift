@@ -31,6 +31,7 @@ class SignUpViewController: UIViewController {
         let error = validateInputs()
         
         if(error){
+            SIgnUpError.text="Fill up the fields properly"
             SIgnUpError.alpha=1
         }
     }

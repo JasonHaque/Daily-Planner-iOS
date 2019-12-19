@@ -31,6 +31,7 @@ class LoginViewController: UIViewController {
     @IBAction func LoginTapped(_ sender: Any) {
         let error = validateInputs()
         if(error){
+            LoginError.text="Fill up the Fields"
             LoginError.alpha=1
         }
     }
