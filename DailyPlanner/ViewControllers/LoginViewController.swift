@@ -30,17 +30,21 @@ class LoginViewController: UIViewController {
     
     @IBAction func LoginTapped(_ sender: Any) {
         let error = validateInputs()
-        if(error){
-            LoginError.text="Fill up the Fields"
-            LoginError.alpha=1
+        if(error != nil){
+            showError(message: error!)
         }
     }
-    func validateInputs()-> Bool{
+    func validateInputs()-> String?{
         if(LoginMail.text?.trimmingCharacters(in: .whitespacesAndNewlines)=="" ||
             LoginPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines)==""){
-            return true
+            return "Fill up the fields properly"
         }
-        return false
+        return nil
+    }
+    
+    func showError(message:String){
+        LoginError.text=message
+        LoginError.alpha=1
     }
     
 }
