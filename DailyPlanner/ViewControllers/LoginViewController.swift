@@ -41,6 +41,7 @@ class LoginViewController: UIViewController {
                 if(error != nil){
                     self.showError(message: "Could not log in")
                 }
+                self.transitionHome()
             }
         }
     }
@@ -55,6 +56,12 @@ class LoginViewController: UIViewController {
     func showError(message:String){
         LoginError.text=message
         LoginError.alpha=1
+    }
+    
+    func transitionHome(){
+       let homeView = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        view.window?.rootViewController = homeView
+        view.window?.makeKeyAndVisible()
     }
     
 }

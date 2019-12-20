@@ -41,6 +41,7 @@ class SignUpViewController: UIViewController {
                 if(error != nil){
                     self.showError("Could not create user")
                 }
+                self.transitionHome()
             }
         }
     }
@@ -59,6 +60,11 @@ class SignUpViewController: UIViewController {
     func showError(_ message : String){
         SIgnUpError.text=message
         SIgnUpError.alpha=1
+    }
+    func transitionHome(){
+       let homeView = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        view.window?.rootViewController = homeView
+        view.window?.makeKeyAndVisible()
     }
    
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		032AFDE3C51A5DD5E908D138 /* Pods_DailyPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C978278307DBF64A3B97C46 /* Pods_DailyPlanner.framework */; };
+		960ABBF323ACE9A80026FFF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ABBF223ACE9A80026FFF7 /* Constants.swift */; };
 		9635918423A909AE0088D0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918323A909AE0088D0D2 /* AppDelegate.swift */; };
 		9635918623A909AE0088D0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918523A909AE0088D0D2 /* SceneDelegate.swift */; };
 		9635918823A909AE0088D0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918723A909AE0088D0D2 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		0FDF60781FE134CD44BF16CB /* Pods-DailyPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPlanner.release.xcconfig"; path = "Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		2C978278307DBF64A3B97C46 /* Pods_DailyPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F8F1492D627E533C825355 /* Pods-DailyPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPlanner.debug.xcconfig"; path = "Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		960ABBF223ACE9A80026FFF7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9635918023A909AE0088D0D2 /* DailyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9635918323A909AE0088D0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9635918523A909AE0088D0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		960ABBF123ACE9890026FFF7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				960ABBF223ACE9A80026FFF7 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9635917723A909AE0088D0D2 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		9635918223A909AE0088D0D2 /* DailyPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				960ABBF123ACE9890026FFF7 /* Helpers */,
 				9635919923A9118B0088D0D2 /* ViewControllers */,
 				9635918323A909AE0088D0D2 /* AppDelegate.swift */,
 				9635918523A909AE0088D0D2 /* SceneDelegate.swift */,
@@ -231,6 +242,7 @@
 				9635918823A909AE0088D0D2 /* ViewController.swift in Sources */,
 				9635918423A909AE0088D0D2 /* AppDelegate.swift in Sources */,
 				9635918623A909AE0088D0D2 /* SceneDelegate.swift in Sources */,
+				960ABBF323ACE9A80026FFF7 /* Constants.swift in Sources */,
 				9635919D23A911C60088D0D2 /* SignUpViewController.swift in Sources */,
 				9635919F23A917F20088D0D2 /* HomeViewController.swift in Sources */,
 			);
