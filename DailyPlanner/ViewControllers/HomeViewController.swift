@@ -21,5 +21,8 @@ class HomeViewController: UIViewController {
         UserLabel.text = Auth.auth().currentUser?.email
     }
     
-
+    @IBAction func LogOutTapped(_ sender: Any) {
+        //Log out tapped
+    }
+    
 }
