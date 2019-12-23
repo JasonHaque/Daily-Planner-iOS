@@ -153,6 +153,12 @@
                                     <action selector="LogOutTapped:" destination="pUn-Wm-9Yz" eventType="touchUpInside" id="75D-TT-hx3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83H-6R-NXR">
+                                <rect key="frame" x="105" y="594" width="185" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Go to Navigation"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tEF-tl-b0U"/>
@@ -165,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="3005.7971014492755" y="30.803571428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Navi View Controller-->
         <scene sceneID="enu-Fa-sqx">
             <objects>
-                <viewController storyboardIdentifier="NavigationVC" id="655-E1-D81" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NavigationVC" id="655-E1-D81" customClass="NaviViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KGk-gM-pQo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +222,7 @@
                                 <state key="normal" title="Go to Profile"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wAF-yw-XlG" firstAttribute="top" secondItem="UEF-Pm-ZqB" secondAttribute="top" constant="100" id="JtO-NH-ZFW"/>
                             <constraint firstItem="UEF-Pm-ZqB" firstAttribute="trailing" secondItem="wAF-yw-XlG" secondAttribute="trailing" constant="20" id="ML0-qd-axe"/>
@@ -227,6 +233,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UEF-Pm-ZqB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7Iz-rw-pYU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFM-oN-zFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
