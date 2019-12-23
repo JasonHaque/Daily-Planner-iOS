@@ -252,67 +252,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFM-oN-zFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3857.971014492754" y="31.473214285714285"/>
+            <point key="canvasLocation" x="4768.115942028986" y="31.473214285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--New Note View Controller-->
         <scene sceneID="0GJ-wY-S3H">
             <objects>
-                <viewController id="VFo-EK-3Db" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewNote" id="VFo-EK-3Db" customClass="NewNoteViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nob-DJ-dWu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ItD-cP-tjw"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vYq-NS-l40"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGn-4w-gcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4668" y="-298"/>
+            <point key="canvasLocation" x="5576.811594202899" y="-298.66071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--New Task View Controller-->
         <scene sceneID="vQB-pd-MYq">
             <objects>
-                <viewController id="ift-zS-Al4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewTask" id="ift-zS-Al4" customClass="NewTaskViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VL2-bq-Hsb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="nZG-V6-Oc0"/>
                     </view>
+                    <navigationItem key="navigationItem" id="TjR-MJ-94Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9P-QO-MCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5414" y="-848"/>
+            <point key="canvasLocation" x="6355" y="-846"/>
         </scene>
-        <!--View Controller-->
+        <!--Note History View Controller-->
         <scene sceneID="ux3-oR-Z9B">
             <objects>
-                <viewController id="Knx-ax-ARK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoteHistory" id="Knx-ax-ARK" customClass="NoteHistoryViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNi-wj-d5B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="a3e-AH-BtL"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ogN-4l-51g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="id7-Iy-xWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4713" y="362"/>
+            <point key="canvasLocation" x="5621.739130434783" y="361.60714285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Task History View Controller-->
         <scene sceneID="cgT-NR-oPm">
             <objects>
-                <viewController id="j4v-ix-aqd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaskHistory" id="j4v-ix-aqd" customClass="TaskHistoryViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xhO-Nl-ghM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Dgm-SE-zkD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UcJ-Od-1ID"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXs-g5-uep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5445" y="-133"/>
+            <point key="canvasLocation" x="6355.072463768116" y="-133.25892857142856"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ite-fp-h7K">
@@ -405,6 +409,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7J-Gt-aQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aBi-8L-k83">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="TzZ-S6-2Pa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ew4-HD-CMv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="655-E1-D81" kind="relationship" relationship="rootViewController" id="BnV-9Q-mcq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9y-Ne-bht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3857.971014492754" y="31.473214285714285"/>
         </scene>
     </scenes>
 </document>
