@@ -24,12 +24,21 @@ class NaviViewController: UIViewController {
     }
     
     @IBAction func NoteHistoryTapped(_ sender: Any) {
+        let NoteHistoryView = storyboard?.instantiateViewController(identifier: Constants.Storyboard.noteHistory) as? NoteHistoryViewController
+        view.window?.rootViewController = NoteHistoryView
+        view.window?.makeKeyAndVisible()
     }
     
     @IBAction func NewTaskTapped(_ sender: Any) {
+        let newTaskView = storyboard?.instantiateViewController(identifier: Constants.Storyboard.newTask) as? NewTaskViewController
+        view.window?.rootViewController = newTaskView
+        view.window?.makeKeyAndVisible()
     }
     
     
     @IBAction func TaskHistoryTapped(_ sender: Any) {
+        let taskHistoryView = storyboard?.instantiateViewController(identifier: Constants.Storyboard.taskHistory) as? TaskHistoryViewController
+        view.window?.rootViewController = taskHistoryView
+        view.window?.makeKeyAndVisible()
     }
 }
