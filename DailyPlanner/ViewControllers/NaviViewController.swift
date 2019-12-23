@@ -17,14 +17,16 @@ class NaviViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func newNoteTapped(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func NoteHistoryTapped(_ sender: Any) {
+    }
+    
+    @IBAction func NewTaskTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func TaskHistoryTapped(_ sender: Any) {
+    }
 }
