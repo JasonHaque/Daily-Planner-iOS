@@ -25,4 +25,10 @@ class HomeViewController: UIViewController {
         //Log out tapped
     }
     
+    @IBAction func GotoNavigationTapped(_ sender: Any) {
+        let navigationView = storyboard?.instantiateViewController(identifier: Constants.Storyboard.naviViewController) as? NaviViewController
+        view.window?.rootViewController = navigationView
+        view.window?.makeKeyAndVisible()
+    }
+    
 }

@@ -158,6 +158,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Go to Navigation"/>
+                                <connections>
+                                    <action selector="GotoNavigationTapped:" destination="pUn-Wm-9Yz" eventType="touchUpInside" id="yUz-1w-iT3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
