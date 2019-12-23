@@ -18,6 +18,9 @@ class NaviViewController: UIViewController {
     
 
     @IBAction func newNoteTapped(_ sender: Any) {
+        let newNoteView = storyboard?.instantiateViewController(identifier: Constants.Storyboard.newNote) as? NewNoteViewController
+        view.window?.rootViewController = newNoteView
+        view.window?.makeKeyAndVisible()
     }
     
     @IBAction func NoteHistoryTapped(_ sender: Any) {

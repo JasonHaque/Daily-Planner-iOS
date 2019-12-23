@@ -12,5 +12,9 @@ struct Constants {
     struct Storyboard {
         static let homeViewController = "HomeVC"
         static let naviViewController = "NavigationVC"
+        static let newTask = "NewTask"
+        static let taskHistory = "TaskHistory"
+        static let newNote = "NewNote"
+        static let noteHistory = "NoteHistory"
     }
 }
