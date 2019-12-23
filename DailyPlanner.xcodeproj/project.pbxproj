@@ -10,6 +10,10 @@
 		032AFDE3C51A5DD5E908D138 /* Pods_DailyPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C978278307DBF64A3B97C46 /* Pods_DailyPlanner.framework */; };
 		960ABBF323ACE9A80026FFF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ABBF223ACE9A80026FFF7 /* Constants.swift */; };
 		960ABBF523B093C10026FFF7 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ABBF423B093C10026FFF7 /* NaviViewController.swift */; };
+		960ABBF723B0E1E00026FFF7 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ABBF623B0E1E00026FFF7 /* NewNoteViewController.swift */; };
+		960ABBF923B0E1F30026FFF7 /* NoteHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ABBF823B0E1F30026FFF7 /* NoteHistoryViewController.swift */; };
+		960ABBFB23B0E2020026FFF7 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ABBFA23B0E2020026FFF7 /* NewTaskViewController.swift */; };
+		960ABBFD23B0E2120026FFF7 /* TaskHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ABBFC23B0E2120026FFF7 /* TaskHistoryViewController.swift */; };
 		9635918423A909AE0088D0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918323A909AE0088D0D2 /* AppDelegate.swift */; };
 		9635918623A909AE0088D0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918523A909AE0088D0D2 /* SceneDelegate.swift */; };
 		9635918823A909AE0088D0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635918723A909AE0088D0D2 /* ViewController.swift */; };
@@ -28,6 +32,10 @@
 		95F8F1492D627E533C825355 /* Pods-DailyPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPlanner.debug.xcconfig"; path = "Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		960ABBF223ACE9A80026FFF7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		960ABBF423B093C10026FFF7 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
+		960ABBF623B0E1E00026FFF7 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		960ABBF823B0E1F30026FFF7 /* NoteHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteHistoryViewController.swift; sourceTree = "<group>"; };
+		960ABBFA23B0E2020026FFF7 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		960ABBFC23B0E2120026FFF7 /* TaskHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskHistoryViewController.swift; sourceTree = "<group>"; };
 		9635918023A909AE0088D0D2 /* DailyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9635918323A909AE0088D0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9635918523A909AE0088D0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +121,10 @@
 				9635919C23A911C60088D0D2 /* SignUpViewController.swift */,
 				9635919E23A917F20088D0D2 /* HomeViewController.swift */,
 				960ABBF423B093C10026FFF7 /* NaviViewController.swift */,
+				960ABBF623B0E1E00026FFF7 /* NewNoteViewController.swift */,
+				960ABBF823B0E1F30026FFF7 /* NoteHistoryViewController.swift */,
+				960ABBFA23B0E2020026FFF7 /* NewTaskViewController.swift */,
+				960ABBFC23B0E2120026FFF7 /* TaskHistoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -244,11 +256,15 @@
 				960ABBF523B093C10026FFF7 /* NaviViewController.swift in Sources */,
 				9635919B23A911B60088D0D2 /* LoginViewController.swift in Sources */,
 				9635918823A909AE0088D0D2 /* ViewController.swift in Sources */,
+				960ABBFB23B0E2020026FFF7 /* NewTaskViewController.swift in Sources */,
 				9635918423A909AE0088D0D2 /* AppDelegate.swift in Sources */,
 				9635918623A909AE0088D0D2 /* SceneDelegate.swift in Sources */,
 				960ABBF323ACE9A80026FFF7 /* Constants.swift in Sources */,
 				9635919D23A911C60088D0D2 /* SignUpViewController.swift in Sources */,
+				960ABBF923B0E1F30026FFF7 /* NoteHistoryViewController.swift in Sources */,
 				9635919F23A917F20088D0D2 /* HomeViewController.swift in Sources */,
+				960ABBFD23B0E2120026FFF7 /* TaskHistoryViewController.swift in Sources */,
+				960ABBF723B0E1E00026FFF7 /* NewNoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
