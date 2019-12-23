@@ -165,6 +165,73 @@
             </objects>
             <point key="canvasLocation" x="3005.7971014492755" y="30.803571428571427"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="enu-Fa-sqx">
+            <objects>
+                <viewController storyboardIdentifier="NavigationVC" id="655-E1-D81" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KGk-gM-pQo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wAF-yw-XlG">
+                                <rect key="frame" x="20" y="144" width="374" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdl-0F-uNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fCg-4Q-FW7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="New Note"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jo-nJ-qEf">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="History"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fdl-0F-uNe" firstAttribute="height" secondItem="6jo-nJ-qEf" secondAttribute="height" id="7Vo-EK-LOL"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sZ0-RU-s7P">
+                                <rect key="frame" x="20" y="304" width="374" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80Q-VG-24s">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="New Task"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGk-Kx-B4U">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Tasks"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0N-Uf-AOR">
+                                <rect key="frame" x="106" y="483" width="202" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Go to Profile"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wAF-yw-XlG" firstAttribute="top" secondItem="UEF-Pm-ZqB" secondAttribute="top" constant="100" id="JtO-NH-ZFW"/>
+                            <constraint firstItem="UEF-Pm-ZqB" firstAttribute="trailing" secondItem="wAF-yw-XlG" secondAttribute="trailing" constant="20" id="ML0-qd-axe"/>
+                            <constraint firstItem="UEF-Pm-ZqB" firstAttribute="trailing" secondItem="sZ0-RU-s7P" secondAttribute="trailing" constant="20" id="Wsp-IT-Tla"/>
+                            <constraint firstItem="wAF-yw-XlG" firstAttribute="leading" secondItem="UEF-Pm-ZqB" secondAttribute="leading" constant="20" id="gcS-9V-id5"/>
+                            <constraint firstItem="sZ0-RU-s7P" firstAttribute="top" secondItem="wAF-yw-XlG" secondAttribute="bottom" constant="100" id="lhU-Hb-U05"/>
+                            <constraint firstItem="sZ0-RU-s7P" firstAttribute="leading" secondItem="UEF-Pm-ZqB" secondAttribute="leading" constant="20" id="qMU-CX-Tdx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UEF-Pm-ZqB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFM-oN-zFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3857.971014492754" y="31.473214285714285"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ite-fp-h7K">
             <objects>
