@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NewNoteViewController: UIViewController {
 
@@ -14,15 +15,22 @@ class NewNoteViewController: UIViewController {
     
     @IBOutlet weak var NoteDesc: UITextField!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
     @IBAction func SaveButtonTapped(_ sender: Any) {
+        let name = NoteName.text?.trimmingCharacters(in: .whitespaces)
+        let desc = NoteDesc.text?.trimmingCharacters(in: .whitespaces)
+        
     }
     
     @IBAction func CancelButtonTapped(_ sender: Any) {
+        NoteName.text = ""
+        NoteDesc.text = ""
     }
     
     @IBAction func ViewButtonTapped(_ sender: Any) {
