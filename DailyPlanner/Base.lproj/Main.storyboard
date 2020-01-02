@@ -288,16 +288,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="SaveButtonTapped:" destination="VFo-EK-3Db" eventType="touchUpInside" id="OJ5-Ng-LG5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZN-Qg-Kxd">
                                         <rect key="frame" x="98" y="0.0" width="67" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="CancelButtonTapped:" destination="VFo-EK-3Db" eventType="touchUpInside" id="WOg-Z0-Nej"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVC-6s-OLU">
                                         <rect key="frame" x="215" y="0.0" width="47" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="View"/>
+                                        <connections>
+                                            <action selector="ViewButtonTapped:" destination="VFo-EK-3Db" eventType="touchUpInside" id="Q8y-wB-cEg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -321,6 +330,10 @@
                         <viewLayoutGuide key="safeArea" id="ItD-cP-tjw"/>
                     </view>
                     <navigationItem key="navigationItem" id="vYq-NS-l40"/>
+                    <connections>
+                        <outlet property="NoteDesc" destination="4Wh-4x-w2a" id="VUA-yt-ImK"/>
+                        <outlet property="NoteName" destination="Htz-em-C5f" id="aGt-QY-QUk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGn-4w-gcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
