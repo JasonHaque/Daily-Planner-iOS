@@ -14,7 +14,27 @@
                     <view key="view" contentMode="scaleToFill" id="80u-eZ-zvo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1zU-hH-Rkh">
+                                <rect key="frame" x="20" y="742" width="374" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-uY-PEf">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <state key="normal" title="Log in"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ2-EQ-98m">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="30"/>
+                                        <state key="normal" title="Sign Up"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IIJ-nM-xAh" firstAttribute="bottom" secondItem="1zU-hH-Rkh" secondAttribute="bottom" constant="40" id="1gf-bg-IbP"/>
+                            <constraint firstItem="1zU-hH-Rkh" firstAttribute="leading" secondItem="IIJ-nM-xAh" secondAttribute="leading" constant="20" id="9EB-5J-tG6"/>
+                            <constraint firstItem="IIJ-nM-xAh" firstAttribute="trailing" secondItem="1zU-hH-Rkh" secondAttribute="trailing" constant="20" id="eDd-md-fLT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IIJ-nM-xAh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Daily Planner" id="Xnc-1n-68K"/>
