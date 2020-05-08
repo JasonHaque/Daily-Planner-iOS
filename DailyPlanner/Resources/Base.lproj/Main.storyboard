@@ -16,15 +16,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1zU-hH-Rkh">
-                                <rect key="frame" x="20" y="742" width="374" height="80"/>
+                                <rect key="frame" x="20" y="724" width="374" height="98"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-uY-PEf">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
-                                        <state key="normal" title="Log in"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="39"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Log in">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="MrF-dI-ngi" kind="show" id="C1T-zi-Ckr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ2-EQ-98m">
-                                        <rect key="frame" x="0.0" y="50" width="374" height="30"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <rect key="frame" x="0.0" y="59" width="374" height="39"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="AMK-92-AzB" kind="show" id="nbp-3G-kLc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -42,6 +56,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9C-Rk-44g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="284.05797101449275" y="-350.22321428571428"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="xVP-6G-lPS">
+            <objects>
+                <viewController id="AMK-92-AzB" customClass="SignUpViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7U0-oD-5F7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oGO-be-6kO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="Fbc-3W-Ujg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOp-N4-DjN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="-15"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="qRN-bx-4sz">
+            <objects>
+                <viewController id="MrF-dI-ngi" customClass="LogInViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaf-jL-OXU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qED-cZ-v4u"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="9CQ-5U-3UV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mod-hO-MLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-762"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gCe-Ev-kl7">
