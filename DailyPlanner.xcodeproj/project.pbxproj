@@ -78,6 +78,7 @@
 		9635918223A909AE0088D0D2 /* DailyPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				96D2DAE62465FF07002AC66C /* Helpers */,
 				96D2DAE12465AA93002AC66C /* Resources */,
 				96D2DAE02465AA5F002AC66C /* Controllers */,
 				96D2DADF2465AA52002AC66C /* Views */,
@@ -122,6 +123,13 @@
 				9635918923A909AE0088D0D2 /* Main.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		96D2DAE62465FF07002AC66C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BF239CF6812348A37201426E /* Frameworks */ = {
