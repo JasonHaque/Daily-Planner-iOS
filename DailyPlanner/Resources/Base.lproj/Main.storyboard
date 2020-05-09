@@ -85,7 +85,10 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBN-QI-sDy">
                                         <rect key="frame" x="0.0" y="162" width="374" height="30"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15H-ix-uu7">
                                         <rect key="frame" x="0.0" y="212" width="374" height="20.5"/>
@@ -105,10 +108,16 @@
                         <viewLayoutGuide key="safeArea" id="oGO-be-6kO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="Fbc-3W-Ujg"/>
+                    <connections>
+                        <outlet property="ConfirmPassword" destination="RSv-DD-JQS" id="QvO-A7-PRZ"/>
+                        <outlet property="EmailAddressField" destination="krH-Ym-aEl" id="Vk3-3g-4uH"/>
+                        <outlet property="PasswordField" destination="LLa-pT-wRo" id="Pg3-Qx-rLB"/>
+                        <outlet property="SignUpLabel" destination="15H-ix-uu7" id="ZOj-C7-BZf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOp-N4-DjN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="-15"/>
+            <point key="canvasLocation" x="1189.8550724637682" y="-15.401785714285714"/>
         </scene>
         <!--Log In-->
         <scene sceneID="qRN-bx-4sz">
@@ -156,6 +165,11 @@
                         <viewLayoutGuide key="safeArea" id="qED-cZ-v4u"/>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="9CQ-5U-3UV"/>
+                    <connections>
+                        <outlet property="EmailAddressField" destination="Npe-yj-rKp" id="aJy-HM-gem"/>
+                        <outlet property="LoginLabel" destination="a15-h9-RKe" id="V0G-ef-kZy"/>
+                        <outlet property="PasswordField" destination="ZrL-hA-CRv" id="nPx-vI-sbX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mod-hO-MLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
